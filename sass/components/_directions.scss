@@ -1,0 +1,40 @@
+.directions-list {
+  display: flex;
+  gap: 30px;
+}
+
+.directions-item {
+  flex-basis: calc((100% - 60px) / 3);
+  position: relative;
+}
+
+.directions-title {
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--color-dark);
+  margin-bottom: 50px;
+}
+
+.directions-overlay {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 70px;
+  width: 100%;
+  background-color: rgba(47, 48, 58, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.directions-overlay-text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--color-white);
+}

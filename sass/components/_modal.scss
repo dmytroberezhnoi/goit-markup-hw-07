@@ -1,0 +1,223 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: opacity 250ms linear, visibility 250ms linear;
+}
+
+.modal {
+  width: 528px;
+  min-height: 581px;
+  background-color: var(--color-white);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 250ms linear;
+}
+
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(1.5);
+}
+
+.button-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  background-color: var(--color-white);
+  color: #000000;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: var(--priority-transition-color);
+}
+
+.button-close:hover,
+.button-close:focus {
+  color: var(--color-blue);
+}
+
+.button-close-icon {
+  fill: currentColor;
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.modal-wrap {
+  padding: 40px 41px;
+}
+
+.modal-title {
+  font-family: var(--font-robot);
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--color-dark);
+  margin-bottom: 12px;
+}
+
+.form-item {
+  margin-bottom: 10px;
+}
+
+.label-title {
+  font-family: var(--font-robot);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: var(--color-gray);
+  margin-bottom: 4px;
+  display: block;
+}
+
+.input-wrap {
+  position: relative;
+}
+
+.input {
+  height: 40px;
+  width: 100%;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding-left: 42px;
+  font-size: 12px;
+  /* outline: transparent; */
+  transition: var(--priority-transition-border);
+}
+
+.input:focus {
+  border: 1px solid var(--color-blue);
+}
+
+.input-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: var(--priority-transition-fill);
+}
+
+.input:focus + .input-icon {
+  fill: var(--color-blue);
+}
+
+.textarea {
+  height: 120px;
+  width: 100%;
+  padding: 12px 16px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  font-size: 12px;
+  resize: none;
+  /* outline: transparent; */
+  transition: var(--priority-transition-border);
+}
+
+.textarea:focus {
+  border: 1px solid var(--color-blue);
+}
+
+.textarea::placeholder {
+  font-family: var(--font-robot);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.form-item-comment {
+  margin-bottom: 20px;
+}
+
+.checkbox {
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.checkbox-label {
+  font-family: var(--font-robot);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: var(--color-gray);
+  display: flex;
+  align-items: center;
+}
+
+.chechbox-icon-wrap {
+  width: 16px;
+  height: 15px;
+  border: 2px solid var(--color-dark);
+  border-radius: 2px;
+  margin-right: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.input-checkbox:checked + .checkbox-label .chechbox-icon-wrap {
+  background-color: var(--color-blue);
+  border: none;
+  fill: var(--color-white);
+}
+
+.input-checkbox:focus + .checkbox-label .chechbox-icon-wrap {
+  border-color: var(--color-blue);
+}
+
+.link-policy {
+  display: block;
+  margin-left: 3px;
+  color: var(--color-blue);
+}
+
+.form-button {
+  display: flex;
+  align-items: center;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  text-align: center;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  color: var(--color-white);
+  background-color: var(--color-blue);
+  padding: 10px 52px;
+  margin-right: auto;
+  margin-left: auto;
+  height: 50px;
+  width: 200px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: 1px solid transparent;
+  transition: var(--priority-transition-bgcolor);
+}
+
+.form-button:hover,
+.form-button:focus {
+  background-color: var(--color-darkblue-btnhover);
+}
