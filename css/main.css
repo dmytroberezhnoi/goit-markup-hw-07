@@ -582,7 +582,7 @@ img {
   margin-left: 10px;
 }
 
-.hero-section {
+.hero {
   background-color: var(--background-color-dark);
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg-img-hero.jpg);
   max-width: 1600px;
@@ -594,7 +594,7 @@ img {
   margin: 0 auto;
 }
 
-.hero-title {
+.hero__title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -608,7 +608,7 @@ img {
   margin-bottom: 30px;
 }
 
-.button-hero {
+.hero__button {
   font-family: inherit;
   font-style: normal;
   font-weight: 700;
@@ -628,7 +628,7 @@ img {
   margin-left: auto;
   transition: var(--priority-transition-bgcolor);
 }
-.button-hero:hover, .button-hero:focus {
+.hero__button:hover, .hero__button:focus {
   background-color: var(--color-darkblue-btnhover);
 }
 
@@ -636,12 +636,12 @@ img {
   padding-bottom: 0;
 }
 
-.benefits-item {
+.benefits__item {
   flex-basis: calc((100% - 90px) / 4);
   gap: 30px;
 }
 
-.benefits-icon-container {
+.benefits__icon-wrapper {
   height: 120px;
   background-color: #f5f4fa;
   border-radius: 4px;
@@ -649,7 +649,7 @@ img {
   margin-bottom: 30px;
 }
 
-.benefits-title {
+.benefits__title {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
@@ -658,13 +658,13 @@ img {
   margin-bottom: 10px;
 }
 
-.benefits-text {
+.benefits__text {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
 
-.benefits-list {
+.benefits {
   display: flex;
   gap: 30px;
 }
@@ -790,7 +790,7 @@ img {
   fill: currentColor;
 }
 
-.clients-title {
+.clients-section__title {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
@@ -799,18 +799,18 @@ img {
   margin-bottom: 50px;
 }
 
-.clients-list {
+.clients {
   display: flex;
   gap: 30px;
   justify-content: center;
 }
 
-.clients-item {
+.clients__item {
   height: 92px;
   flex-basis: calc((100% - 150px) / 6);
 }
 
-.clients-link {
+.clients__link {
   display: flex;
   width: 100%;
   height: 100%;
@@ -822,12 +822,12 @@ img {
   align-items: center;
   transition: var(--priority-transition-border), var(--priority-transition-color);
 }
-.clients-link:hover, .clients-link:focus {
+.clients__link:hover, .clients__link:focus {
   border: 1px solid var(--color-blue);
   color: var(--color-blue);
 }
 
-.clients-icon {
+.clients__icon {
   fill: currentColor;
 }
 
