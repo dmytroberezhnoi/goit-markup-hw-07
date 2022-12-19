@@ -70,12 +70,12 @@
   align-items: center;
   transition: var(--priority-transition-bgcolor),
     var(--priority-transition-color);
-}
 
-.team-sociallink:hover,
-.team-sociallink:focus {
-  background-color: var(--color-blue);
-  color: var(--color-white);
+  &:hover,
+  &:focus {
+    background-color: var(--color-blue);
+    color: var(--color-white);
+  }
 }
 
 .team-sociallinks-icon {

@@ -47,9 +47,9 @@
   margin-right: auto;
   margin-left: auto;
   transition: var(--priority-transition-bgcolor);
-}
 
-.button-hero:hover,
-.button-hero:focus {
-  background-color: var(--color-darkblue-btnhover);
+  &:hover,
+  &:focus {
+    background-color: var(--color-darkblue-btnhover);
+  }
 }
